@@ -1,0 +1,48 @@
+{
+    "name": "graham-campbell/binput",
+    "description": "Binput Is An Input Protector For Laravel",
+    "keywords": ["laravel", "framework", "better input", "better", "input", "security", "xss", "Binput", "Laravel Binput", "Laravel-Binput", "Graham Campbell", "GrahamCampbell"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Graham Campbell",
+            "email": "hello@gjcampbell.co.uk",
+            "homepage": "https://github.com/GrahamCampbell"
+        }
+    ],
+    "require": {
+        "php": "^7.4.15 || ^8.0.2",
+        "graham-campbell/security": "^10.0",
+        "illuminate/contracts": "^8.75 || ^9.0",
+        "illuminate/http": "^8.75 || ^9.0",
+        "illuminate/support": "^8.75 || ^9.0"
+    },
+    "require-dev": {
+        "graham-campbell/analyzer": "^3.1",
+        "graham-campbell/testbench": "^5.7",
+        "mockery/mockery": "^1.5",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "GrahamCampbell\\Binput\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "GrahamCampbell\\Tests\\Binput\\": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "GrahamCampbell\\Binput\\BinputServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
